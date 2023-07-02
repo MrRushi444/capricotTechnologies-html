@@ -291,6 +291,7 @@ body {
   }
   .partnersHead {
     font-size: large;
+    padding: 10px;
   }
   .industries.head {
     text-align: center;
