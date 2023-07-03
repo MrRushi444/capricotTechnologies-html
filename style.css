@@ -1,0 +1,402 @@
+body {
+  background-color: rgb(3, 10, 3);
+}
+#navbar {
+  animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav-item.nav-link {
+  font-size: xx-large;
+}
+
+#hero {
+  opacity: 0;
+  background-color: rgb(116, 180, 155);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.heroImg {
+  width: 80%;
+}
+.container.hero {
+  text-align: center;
+  background-color: rgb(116, 180, 155);
+  padding-top: 25px;
+  padding-bottom: 10px;
+  color: rgb(244, 249, 244);
+  width: 100%;
+}
+.heroPara {
+  font-size: x-large;
+}
+
+#content {
+  background-color: rgb(244, 249, 244);
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.container.divisonFirst {
+  display: flex;
+  text-align: left;
+  background-color: rgb(244, 249, 244);
+  opacity: 0;
+  animation: slideRight 1s ease-in-out forwards;
+}
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.left-alignHead {
+  padding-top: 20px;
+}
+.left-align {
+  font-family: "Cabin", sans-serif;
+}
+.container.divisonsecond {
+  display: flex;
+  text-align: right;
+  background-color: rgb(244, 249, 244);
+  padding-bottom: 10px;
+  opacity: 0;
+  animation: slideRight 1s ease-in-out forwards;
+}
+
+.column {
+  flex: 1;
+}
+
+.column .float-right {
+  float: right;
+}
+
+.column .float-left {
+  float: left;
+}
+
+.column .secPart {
+  padding-top: 45px;
+}
+.partners {
+  text-align: center;
+  opacity: 0;
+  animation: slideUp 1s ease-in-out forwards;
+}
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.partners.images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.prductsOnMobile.heading {
+  text-align: center;
+  color: rgb(11, 5, 5);
+  padding-bottom: 10px;
+}
+#products a {
+  text-decoration: none;
+}
+
+#products a :hover {
+  color: rgb(46, 244, 168);
+}
+
+#products {
+  padding-top: 10px;
+  background-color: white;
+  margin-bottom: 0;
+}
+
+.indushead {
+  color: rgb(4, 4, 4);
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+  font-size: 3rem;
+  border-bottom: 2px solid;
+}
+
+.col-md-6 {
+  background-color: rgb(167, 215, 197);
+}
+
+.industVideo {
+  width: 400px;
+  border-radius: 20px;
+  border: solid 8px rgb(3, 3, 3);
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+.copyright {
+  text-align: center;
+}
+
+#friends {
+  color: rgb(5, 5, 5);
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+}
+
+#industries {
+  background-color: rgb(167, 215, 197);
+  color: black;
+  font-family: "Belanosima", sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.custom-row {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.py-3 {
+  opacity: 0;
+  animation: slideUp 1s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.container.indusPage {
+  width: 100%;
+}
+
+/* Css for products.html page */
+.list-group-item.list-group-item-action.d-flex.gap-3.py-3.productList1st {
+  width: 1400px;
+}
+.list-group :hover {
+  background-color: rgb(167, 215, 197) !important;
+}
+
+.bi.bi-arrow-left-square-fill {
+  width: 50px;
+}
+
+#goHome {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+
+/* Things not applicable for desktop view */
+.float-right.forMobile {
+  display: none;
+}
+
+.float-left.forMobile {
+  display: none;
+}
+
+/* For Tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .navContent.logo {
+    width: 140px;
+  }
+  .float-right {
+    width: 300px;
+    margin-left: 100px;
+  }
+  .float-left {
+    width: 300px;
+    margin-right: 100px;
+  }
+
+  .industVideo {
+    width: 300px;
+    border-radius: 20px;
+    border: solid 8px rgb(3, 3, 3);
+  }
+
+  .list-group-item.list-group-item-action.d-flex.gap-3.py-3.productList1st {
+    width: 500px;
+  }
+
+  .left-align.points {
+    display: none;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+/* For Mobile */
+@media (max-width: 600px) {
+  .navContent {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+
+  .navContent.logo {
+    width: 140px;
+    margin-right: 140px;
+  }
+
+  .heroImg {
+    width: 100%;
+  }
+  .heroPara {
+    font-size: large;
+  }
+
+  .container.divisonFirst {
+    display: block;
+    text-align: left;
+    padding-top: 15px;
+  }
+
+  .container.divisonsecond {
+    display: block;
+    text-align: right;
+  }
+
+  .float-right.forMobile {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+
+  .float-left.forMobile {
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+
+  .images.img {
+    width: 115px;
+    height: 30px;
+  }
+
+  .dropdown-center {
+    text-align: center;
+  }
+  .partnersHead {
+    font-size: large;
+    padding: 10px;
+  }
+
+  .industries.head {
+    text-align: center;
+  }
+  .indushead {
+    color: rgb(4, 4, 4);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Roboto Mono", monospace;
+    font-weight: bolder;
+    font-size: 3rem;
+    border-bottom: 2px solid;
+  }
+  #industries {
+    background-color: rgb(167, 215, 197);
+    color: black;
+    font-family: "Belanosima", sans-serif;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .industVideo {
+    width: 190px;
+    border-radius: 15px;
+  }
+  .social {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .copyright {
+    text-align: center;
+  }
+
+  .container.indusPage {
+    width: 100%;
+  }
+  .indushead {
+    font-size: x-large;
+    font-weight: bolder;
+  }
+
+  /* Css for products.html page */
+  .list-group-item.list-group-item-action.d-flex.gap-3.py-3.productList1st {
+    width: 300px;
+  }
+
+  .bi.bi-arrow-left-square-fill {
+    width: 50px;
+  }
+
+  #goHome {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+
+  /* Things not applicable for Mobile view */
+  .float-right {
+    display: none;
+  }
+
+  .float-left {
+    display: none;
+  }
+  .left-align.points {
+    display: none;
+  }
+  .pdetail {
+    display: none;
+  }
+}
